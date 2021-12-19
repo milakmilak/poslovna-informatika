@@ -7,7 +7,7 @@ import javax.persistence.ManyToOne;
 public class BankAccount extends BaseEntity {
 
     private String number;
-    private Double balance;
+    private Double balance = 0D;
 
     @ManyToOne
     private Client owner;
